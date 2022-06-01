@@ -1,0 +1,259 @@
+// https://www.colourlovers.com/palette/4870199/spotted_frog
+// #BA4710,#BD7A36,#D2D63B,#483723,#B2EB82,#BA4710,#BD7A36,#D2D63B
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Pinyon+Script&family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&Fira+Code:wght@500&Pinyon+Script&display=swap');
+
+:root {
+  // default theme color
+  // can be overrided by uses `themeConfig` option
+  --slidev-theme-primary: #fc0d1a;
+}
+
+.slidev-layout.cover,
+.slidev-layout.intro {
+  @apply h-full grid;
+  text-align: center;
+  
+  h1 {
+    @apply text-5xl leading-20;
+    line-height: 3rem;
+    color: #fc0d1a //#ffbb56;
+  }
+  
+  h1 + p {
+    font-size: 1rem;
+  }
+
+  p + h2, ul + h2, table + h2 {
+    @apply mt-10;
+  }
+}
+
+.slidev-layout.intro {
+  background: url("../assets/maif.png") calc(100% - 1em) calc(100% - 1em) / 2em 2em no-repeat,
+    url("../assets/background-title.jpg");
+
+  h1 {
+    margin-top: 2em;
+    padding-bottom: 2.5em;
+    background: url("../assets/arabesque-intro.svg") center 2.3em / 3em auto no-repeat,
+      url("../assets/arabesque-left.svg") 2.5em 0.7em / 12% auto no-repeat,
+      url("../assets/arabesque-right.svg") calc(100% - 2.5em) 0.7em / 12% auto no-repeat;
+  }
+}
+
+.slidev-layout.cover {
+  background-image: url("../assets/background-title.jpg");
+
+  h1 {
+    margin-top: 1.3em;
+    padding-bottom: 1.9em;
+    background: url("../assets/arabesque-cover.svg") center 2.3em / 3em auto no-repeat;
+  }
+}
+
+.slidev-layout {
+  color: #eeeeee;
+  background-color: #111111;
+  background-image: url("../assets/background-regular.jpg");
+  background-size: cover;
+  height: 100%;
+  font-size: 1.6rem;
+  line-height: 1.35em;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+
+  p {
+    line-height: 1.35em;
+  }
+
+  abbr {
+    font-variant: small-caps;
+    text-decoration: none;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.8rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    margin-bottom: 0.7em;
+
+    code {
+      position: relative;
+      color: #fc0d1a;
+      font-size: 70%;
+      bottom: -0.05em;
+    }
+
+    strong {
+      font-weight: 900;
+      text-shadow: 0 0 1px black;
+    }
+  }
+  h1, h2, h3, strong {
+    color: #fc0d1a;
+  }
+
+  blockquote {
+    background-color: transparent;
+    border-color: 0;
+    border-radius: 0;
+    border-width: 0;
+    font-size: 1em;
+    line-height: 1.35em;
+    padding: 0.8em 2rem;
+    margin-bottom: 0.5em;
+    color: white;
+    quotes: "«\00a0""\00a0»";
+
+    > :first-child {
+      margin-top: 0;
+
+      &::before {
+        content: open-quote;
+        font-family: 'Pinyon Script', cursive;
+        font-weight: normal;
+        display: inline-block;
+        color: #cf5a17;
+        transform: scale(2.7) translate(0.1em, -0.2em);
+      }
+    }
+
+    > h1:first-child {
+      padding-top: 0.5em;
+    }
+
+    > p:last-of-type {
+      margin-bottom: 0.2em;
+
+      &::after {
+        content: close-quote;
+        font-family: 'Pinyon Script', cursive;
+        font-weight: normal;
+        display: inline-block;
+        color: #cf5a17;
+        transform: scale(2.7) translate(-0.1em, 0);
+      }
+    }
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+
+    footer {
+      text-align: right;
+      font-style: italic;
+      color: #666666;
+      font-weight: 300;
+
+      &::before {
+        content: "—\00a0";
+      }
+    }
+  }
+
+  .katex, .katex .mathnormal {
+    font-family: 'Exo', sans-serif;
+    font-style: normal;
+    font-size: 1em;
+  }
+  .katex-html {
+    background-color: rgba(256, 256, 256, 0.1);
+    padding: 0 0.2em;
+  }
+
+  a {
+    color: #cf5a17;
+    background-color: rgba(256, 256, 256, 0.1);
+    padding: 0 0.2em;
+    border: none;
+
+    &:active, &:hover {
+      border: none;
+    }
+  }
+  em {
+    font-weight: 300;
+  }
+
+  ul {
+    position: relative;
+    list-style: none;
+    padding: 0;
+
+    li {
+      line-height: 1.3em;
+      margin-left: 0;
+      padding-left: 0;
+      margin-bottom: 0.5em;
+
+      &::before {
+        content: url('../assets/bullet.svg');
+        display: inline-block;
+        position: relative;
+        margin-left: -1.5em;
+        margin-right: 0.5em;
+        top: 0.15em;
+        height: 1em;
+        width: 1em;
+      }
+
+      p:first-child, code:first-child {
+        display: inline;
+      }
+    }
+  }
+
+  table {
+    font-size: 0.7em;
+    width: 100%;
+    margin: 0 auto;
+
+    th, td {
+      text-align: left;
+      border-collapse: collapse;
+      border-color: rgba(190, 190, 190, 0.2);
+      border-width: 1px;
+      padding: 0 .2em;
+    }
+    thead th, th {
+      font-weight: 700;
+      background-color: rgba(0,0, 0, 0.35);
+      color: #cf5a17;
+    }
+    tbody > tr:nth-child(2n+1) td {
+      background-color: rgba(256, 256, 256, 0.05);
+    }
+  }
+
+  .ok {
+    color: #D2D63B;
+  }
+  .neutral {
+    color: #B2EB82;
+  }
+  .confused {
+    color: #cf5a17;
+  }
+  .confounded {
+    color: #c62222;
+  }
+  .unhappy {
+    color: #483723;
+  }
+  .discrete {
+    color: #bebebe;
+    opacity: 0.3;
+  }
+}
