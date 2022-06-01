@@ -1,3 +1,7 @@
+---
+preload: false
+---
+
 ## `Last-Modified` & `If-Modified-Since`
 
 t<sub>0</sub> **+ 30 min**

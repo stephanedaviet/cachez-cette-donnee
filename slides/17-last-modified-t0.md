@@ -1,3 +1,7 @@
+---
+preload: false
+---
+
 ## `Last-Modified` & `If-Modified-Since`
 
 Premier accès : **t<sub>0</sub>**
