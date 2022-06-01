@@ -4,6 +4,7 @@ theme: ./dark-vintage
 selectable: true
 remoteAssets: true
 download: true
+downloadUrl: ./cachez-cette-donnee.pdf
 exportFilename: cachez-cette-donnee.pdf
 lineNumbers: true
 colorSchema: dark
