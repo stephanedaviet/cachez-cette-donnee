@@ -5,7 +5,7 @@ selectable: true
 remoteAssets: true
 download: true
 downloadUrl: ./cachez-cette-donnee.pdf
-exportFilename: cachez-cette-donnee.pdf
+exportFilename: cachez-cette-donnee
 lineNumbers: true
 colorSchema: dark
 routerMode: hash
