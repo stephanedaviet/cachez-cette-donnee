@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "slidev",
+    "build": "slidev build",
+    "export": "slidev export"
   },
-  "author": "",
+  "author": "Stéphane Daviet",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
@@ -23,7 +25,6 @@
     "@slidev/cli": "^0.32.3",
     "@slidev/theme-default": "^0.21.2",
     "node-sass": "^7.0.1",
-    "postcss-for": "^2.1.1",
     "prism-themes": "^1.9.0",
     "sass": "^1.52.1",
     "vue3-sequential-entrance": "^2.0.2"
