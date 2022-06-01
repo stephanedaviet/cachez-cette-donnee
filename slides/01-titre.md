@@ -5,7 +5,7 @@ layout: intro
 # Cachez cette donnée <br /> que je ne saurais voir
 
 <img title="Stéphane Daviet"
-  src="AvatarPixel-128x128.png"
+  src="/AvatarPixel-128x128.png"
   style="display: block;
     position: absolute;
     bottom: 2em;
