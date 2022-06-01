@@ -10,6 +10,6 @@
 
 <v-after at="3">
 
-_Source : [Web Almanac par HTTP Archive (2019) – Part IV Chapter 16: Caching](https://almanac.httparchive.org/en/2019/caching)_
+_Source&nbsp;: [Web Almanac par HTTP Archive (2019) – Part IV Chapter 16: Caching](https://almanac.httparchive.org/en/2019/caching)_
 
 </v-after>

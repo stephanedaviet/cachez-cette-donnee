@@ -2,14 +2,92 @@
 
 ## `ETag` & `If-None-Match`
 
+<v-click at="1">
+
 `ETag`&nbsp;∼&nbsp;Somme de hashage (_digest/checksum_) de la ressource.
 
-> Typiquement, une valeur d'ETag peut être un hash du contenu, un hash du dernier timestamp de modification, ou juste un numero de révision.
+</v-click>
+
+<v-click at="2">
+
+> Typiquement, une valeur d'ETag peut être un **hash du contenu**, un hash du dernier timestamp de modification ou juste un numéro de révision.
 > <footer>traduit depuis <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag"><abbr title="Mozilla Developer Network">MDN</abbr> – Web/HTTP/Headers/Etag</a></footer>
 
-<img src="/ETag.svg" style="width: 100%; margin: 0 auto" />
+</v-click>
 
-`If-None-Match` prioritaire à `If-Modified-Since` si les 2 sont présents.\
+<svg width="100%" height="auto" style="margin: 0 auto" inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)" sodipodi:docname="ETag.svg" version="1.1" viewBox="0 0 444.85 100" xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd">
+ <sodipodi:namedview bordercolor="#999999" borderopacity="1" inkscape:current-layer="svg18246" inkscape:cx="251.19969" inkscape:cy="49.942268" inkscape:pagecheckerboard="0" inkscape:pageopacity="0" inkscape:pageshadow="0" inkscape:window-height="1143" inkscape:window-maximized="1" inkscape:window-width="1920" inkscape:window-x="0" inkscape:window-y="0" inkscape:zoom="3.023491" pagecolor="#000000" showgrid="false"/>
+ <defs>
+  <marker id="marker110282882" overflow="visible" orient="auto">
+   <path transform="scale(.6) rotate(180) translate(0)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill="#fff" fill-rule="evenodd" stroke="#fff" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="marker1102826195" overflow="visible" orient="auto">
+   <path transform="scale(.6) rotate(180) translate(0)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill="#fff" fill-rule="evenodd" stroke="#fff" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="marker1102823612" overflow="visible" orient="auto">
+   <path transform="scale(.6) rotate(180) translate(0)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill="#fff" fill-rule="evenodd" stroke="#fff" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="marker1102829576" overflow="visible" orient="auto">
+   <path transform="scale(.6) rotate(180) translate(0)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill="#fff" fill-rule="evenodd" stroke="#fff" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="marker1102824438" overflow="visible" orient="auto">
+   <path transform="scale(.6) rotate(180) translate(0)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill="#fff" fill-rule="evenodd" stroke="#fff" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+ </defs>
+ <g v-click="3">
+  <text transform="scale(1.0053 .99474)" x="17.872244" y="22.259525" fill="#ffffff" font-family="Helvetica" font-size="7.2271px" stroke-width="1.6916"><tspan font-family="Exo" stroke-width="1">GET</tspan></text>
+  <text transform="scale(1.0053 .99474)" x="89.2061" y="52.708351" fill="#ffffff" font-family="Exo" font-size="6.6594px" text-align="center" text-anchor="middle" style="line-height:1.25" xml:space="preserve"><tspan x="89.2061" y="52.708351">CACHE</tspan></text>
+  <path d="m17.053 36.778v-8.2741c0-2.054 1.5189-3.7077 3.4056-3.7077h65.848c1.8867 0 3.4056 1.6536 3.4056 3.7077v8.2741" fill="none" marker-end="url(#marker110282882)" stop-color="#000000" stroke="#fff"/>
+  <path d="m81.872 38.766h15.68c1.9462 0 3.513 1.5504 3.513 3.4761v15.514c0 1.9258-1.5668 3.4761-3.513 3.4761h-15.68c-1.9462 0-3.513-1.5504-3.513-3.4761v-15.514c0-1.9258 1.5668-3.4761 3.513-3.4761z" fill="#eee" fill-opacity=".33" stop-color="#000000" stroke="#fff" style="-inkscape-stroke:none;font-variation-settings:normal"/>
+  <path d="m21.319 38.761c1.5923 0.56913 2.7487 1.4019 3.7174 2.3544-0.55095 0.30553-1.1442 0.61706-1.8284 0.88664-0.69019-1.6535-1.2957-2.5341-1.889-3.241zm2.3976 4.4273c0.82946-0.33549 1.6166-0.72489 2.337-1.1802 1.6952 1.9351 2.0827 3.229 2.5247 4.4631-1.1987 0.82075-2.452 1.5217-3.8506 1.953-0.1453-1.5876-0.36326-3.229-1.011-5.236zm1.0353 6.4761c1.5923-0.47927 2.9485-1.1143 4.0686-1.8991 0.34511 2.1867 0.19375 3.4987-0.04236 4.6549-1.8043 1.3539-3.227 1.9351-4.6134 2.4623 0.19374-1.1084 0.36932-0.59909 0.58728-5.218zm-0.99902 6.7576c1.2774-0.3954 2.5791-0.83273 4.4621-2.0369-1.6649 3.966-4.5408 6.0088-7.0534 6.8835 0.91422-1.0305 1.8164-2.2886 2.5913-4.8466zm-1.4955 0.38941c-1.2351 3.271-3.009 4.7627-4.5408 5.1102v-4.4932c1.5802-0.04793 3.0998-0.23964 4.5408-0.61706zm-4.5529-0.61107v-5.23c1.55 0.03594 3.572-0.31153 5.7517-0.80277 0.0059 2.2227-0.32089 3.7862-0.67809 5.2899-2.0403 0.55116-3.6145 0.69494-5.0735 0.74287zm0.07872-6.542v-5.3139c1.6166-0.07788 3.1967-0.29954 4.7285-0.76084 0.52067 1.5396 0.81129 3.3488 1.011 5.242-1.7618 0.51521-3.6992 0.76084-5.7396 0.83273zm-0.1332-11.64h0.50252c1.1442 0.37743 1.9435 1.276 2.4097 1.8631 0.69625 0.88066 1.0776 1.6894 1.441 2.4922-1.1685 0.33549-2.5247 0.63503-4.3531 0.70093zm-1.1987 5.1222c-1.447-0.0659-2.8759-0.29954-4.2804-0.70692 0.47224-1.1503 1.0776-2.2166 1.9132-3.1092 0.50858-0.50323 1.0595-0.97655 1.8709-1.2401h0.49646zm0.06059 6.5241c-2.1735-0.08387-4.0686-0.37143-5.7457-0.83273 0.11504-1.5217 0.15742-2.9715 1.011-5.242 1.889 0.59309 4.0746 0.76084 4.7406 0.74885zm-0.06059 1.2521 0.0059 5.242c-1.6649 0.04194-3.3299-0.24562-4.9949-0.67098-0.52673-1.8692-0.75075-3.6484-0.7447-5.3738 1.883 0.52121 3.7961 0.76084 5.7335 0.80277zm0 6.578v4.4871c-0.89-0.1917-1.6347-0.68296-2.2946-1.3419-1.0353-1.0663-1.7376-2.3544-2.2582-3.6484 1.5136 0.30553 3.0272 0.53319 4.5529 0.50323zm-6.0181-0.96453c0.85367 2.606 1.7618 3.7143 2.67 4.7627-3.9778-1.4977-5.9151-4.2296-6.9929-6.56 1.4168 0.73088 2.8274 1.4678 4.3228 1.7972zm-4.9767-3.7263c-0.39959-1.4318-0.50857-3.0733-0.17558-5.0383 1.1564 0.71291 2.4459 1.3839 4.1533 1.953-0.00591 1.929 0.18163 3.6964 0.57517 5.2959-1.2532-0.34747-2.6882-0.96453-4.5529-2.2107zm0.19979-6.3203c0.52673-1.7553 1.3985-3.2171 2.5368-4.4751 0.81734 0.55116 1.562 0.84471 2.3248 1.1922-0.62966 1.7254-0.90816 3.6425-1.005 5.242-1.217-0.43134-2.4339-0.88664-3.8567-1.959zm3.4086-5.4277c1.2957-1.0903 2.555-1.8272 3.7901-2.2886-0.62965 0.74885-1.2714 1.7014-1.9556 3.1692-0.6902-0.29355-1.3138-0.58711-1.8345-0.88066z" fill="#d45500" pointer-events="all" stroke-width="1.6916"/>
+ </g>
+ <g v-click="4">
+  <rect x="144.2" y="2.073" width="139.25" height="41.936" fill="#eee" fill-opacity=".33" pointer-events="all" stroke="#fff"/>
+  <text transform="scale(1.0053 .99474)" x="212.7132" y="21.171957" fill="#1a1a1a" font-family="Exo" font-size="7.2271px" text-anchor="middle"><tspan x="212.7132" y="21.171957">HTTP Request</tspan><tspan x="212.7132" y="30.386122"><tspan fill="#aa0000" font-family="Exo" font-weight="600" stroke-width=".98008">If-None-Match</tspan>: 33a64df551425f</tspan></text>
+  <g transform="matrix(.79129 0 0 .78298 212.59 13.964)" pointer-events="all" stroke-width="2.149">
+   <path d="m177.32 63.363v-30.517c0-0.92792 0.85418-1.7821 1.7882-1.7821h12.966c0.91563 0 1.776 0.84189 1.776 1.7882v15.246c-2.5871 1.1491-4.6027 3.4536-5.4508 6.0407h-7.8658v1.3827h7.5094c-0.13519 0.81116-0.21508 1.7452-0.11675 2.7653h-7.3926v1.3888h7.6016c0.34413 1.4257 0.92178 2.6424 1.6961 3.6871zm3.2139-26.762h10.103v-1.3827h-10.103z" fill="#eee"/>
+   <path d="m201.11 49.144c1.1614 0.41173 1.9972 1.0262 2.71 1.7145-0.40558 0.22737-0.83574 0.4486-1.3335 0.64524-0.49776-1.2045-0.94636-1.8435-1.3765-2.3597zm1.7452 3.2324c0.60837-0.25195 1.1799-0.54078 1.7022-0.86647 1.2352 1.4134 1.5117 2.3597 1.8313 3.2631-0.86647 0.59608-1.7821 1.1061-2.7899 1.4195-0.11061-1.1553-0.27038-2.3536-0.74356-3.8161zm0.75585 4.7195c1.1614-0.34413 2.1447-0.81116 2.9558-1.3827 0.25195 1.5977 0.14134 2.5502-0.0307 3.4044-1.3089 0.98323-2.3413 1.4072-3.3553 1.7944 0.14134-0.81116 0.27039-0.43631 0.43016-3.8161zm-0.72513 4.9407c0.92792-0.29497 1.8743-0.61452 3.2385-1.4871-1.2045 2.8882-3.3 4.3815-5.1251 5.0206 0.66368-0.74971 1.3212-1.6653 1.8866-3.5335zm-1.0877 0.27653c-0.89719 2.3905-2.1938 3.4843-3.3061 3.7363v-3.2877c1.1492-0.03073 2.2553-0.17206 3.3061-0.4486zm-3.3122-0.44245v-3.8223c1.1184 0.03073 2.5933-0.22123 4.1848-0.57764 6e-3 1.6223-0.23351 2.7653-0.49161 3.8592-1.4871 0.39944-2.6363 0.5039-3.6932 0.54077zm0.0492-4.7748v-3.8837c1.1737-0.05531 2.3352-0.21508 3.4474-0.55306 0.381 1.1246 0.58993 2.4458 0.73741 3.8284-1.2905 0.37486-2.6977 0.55306-4.1848 0.60837zm-0.0922-8.4926h0.36257c0.82959 0.27653 1.4195 0.92792 1.7575 1.3581 0.50391 0.6391 0.78044 1.229 1.0447 1.819-0.84189 0.23966-1.8313 0.46089-3.1648 0.51005zm-0.86647 3.7301c-1.0631-0.04302-2.0955-0.21508-3.1156-0.51005 0.33799-0.84803 0.78044-1.6162 1.3888-2.2676 0.36871-0.36871 0.76815-0.71284 1.3581-0.90948h0.36871zm0.043 4.7625c-1.5793-0.05531-2.9681-0.27039-4.1849-0.60223 0.0799-1.1123 0.11061-2.1692 0.73742-3.8284 1.3765 0.43016 2.962 0.55306 3.4536 0.54078zm-0.043 0.91563v3.8284c-1.2167 0.03073-2.4212-0.17821-3.6318-0.49161-0.38714-1.3581-0.55306-2.6609-0.54692-3.9206 1.3704 0.37486 2.7653 0.55306 4.1787 0.58379zm0 4.7994v3.2815c-0.65753-0.14134-1.1983-0.49776-1.6715-0.97708-0.762-0.78044-1.272-1.7268-1.6469-2.667 1.1 0.22123 2.2 0.38715 3.3184 0.36256zm-4.3815-0.70055c0.62066 1.905 1.2843 2.71 1.9419 3.4782-2.8944-1.0938-4.3078-3.091-5.0882-4.7932 1.0324 0.54078 2.0586 1.0754 3.1463 1.3151zm-3.6195-2.7162c-0.28882-1.0508-0.36871-2.243-0.12905-3.681 0.83574 0.51619 1.7821 1.0078 3.0234 1.4257-6e-3 1.4011 0.12905 2.6977 0.41787 3.8715-0.91563-0.2581-1.9542-0.70669-3.3122-1.6162zm0.14134-4.615c0.381-1.2843 1.0201-2.3536 1.8436-3.2692 0.59608 0.40558 1.143 0.61452 1.6961 0.86647-0.46088 1.2659-0.66368 2.667-0.73127 3.8346-0.89105-0.31955-1.7698-0.65139-2.8083-1.4318zm2.4826-3.9636c0.93407-0.79887 1.862-1.3335 2.7592-1.6653-0.46088 0.54077-0.92792 1.2352-1.4257 2.3106-0.5039-0.21508-0.9525-0.43016-1.3335-0.64524z" fill="#d45500"/>
+  </g>
+  <text transform="scale(1.0053 .99474)" x="90.745049" y="22.259525" fill="#ffffff" font-family="Helvetica" font-size="7.2271px" stroke-width="1.6916"><tspan font-family="Exo" font-style="italic" stroke-width="1">Stale</tspan></text>
+  <path d="m89.711 36.778v-8.2741c0-2.054 1.5189-3.7077 3.4056-3.7077h49.202" fill="none" marker-end="url(#marker1102826195)" stop-color="#000000" stroke="#fff"/>
+  <path d="m283.45 24.797h72.709c1.8867 0 3.4056 1.6536 3.4056 3.7077v8.4699" fill="none" marker-end="url(#marker1102829576)" stop-color="#000000" stroke="#fff"/>
+ </g>
+ <g transform="matrix(.98523 0 0 .97489 175.35 7.1346)" stroke-width="1.0204" v-click="5">
+  <g transform="translate(5.1797)">
+   <rect x="210.33" y="58.615" width="31.993" height="14.496" rx="1.2052" ry="1.2052" fill="#fff" stop-color="#000000" stroke-width="1.0204" style="-inkscape-stroke:none"/>
+   <text x="226.10216" y="64.10025" fill="#000000" font-family="Helvetica" font-size="4.9161px" font-style="italic" stroke-width="1.726" text-anchor="middle"><tspan x="226.10216" y="64.10025"><tspan fill="#000000" font-family="Exo" font-style="italic" stroke-width="1.0204">ETag</tspan></tspan><tspan x="226.10216" y="70.386261"><tspan fill="#000000" font-family="Exo" font-style="italic" stroke-width="1.0204">computation</tspan></tspan></text>
+  </g>
+  <rect x="248.3" y="58.288" width="20.211" height="18.866" fill="none" pointer-events="all" stroke-width="1.726"/>
+  <path d="m223.84 44.299-2.1165-0.87146c-0.29878-0.17429-0.43573-0.42329-0.31124-0.77187l0.79677-1.9172c0.18679-0.28634 0.41083-0.46063 0.77187-0.31124l1.967 0.99596c0.63492-0.74697 1.3197-1.4815 2.079-2.1288l-0.85902-2.1165c-0.0622-0.24898-0.0871-0.49799 0.2739-0.73451l1.9795-0.83413c0.37348-0.12449 0.58513 0.0498 0.72208 0.26144l0.88392 2.1663c0.8839-0.17429 1.7678-0.26144 2.8012 0.0498l0.89637-2.191c0.19914-0.31124 0.43573-0.39837 0.74697-0.28634l1.967 0.83413c0.32367 0.19919 0.36101 0.44817 0.27388 0.70962l-0.88393 2.1663c0.77187 0.62248 1.494 1.2699 2.0543 2.0168l2.1288-0.85903c0.37348-0.11205 0.61002 0.0249 0.74697 0.32368l0.83411 1.967c0.0373 0.28634-0.0122 0.53533-0.31124 0.68472l-2.1414 0.87146c0.0997 0.84657 0.0871 1.9048 0 2.8385l2.1414 0.87146c0.2988 0.17429 0.42329 0.41083 0.33614 0.72207l-0.78431 1.8425c-0.14931 0.23654-0.36104 0.36104-0.68474 0.28634l-2.1661-0.88392c-0.57268 0.78431-1.2948 1.4815-2.0916 2.079l0.85901 2.1288c0.13695 0.33614-0.0373 0.62248-0.23653 0.72207l-2.0916 0.87146c-0.28634 0.0498-0.53532 0.03736-0.65983-0.32368l-0.87147-2.1663c-0.79677 0.22409-1.7927 0.28634-2.8012 0.0249l-0.87147 2.1414c-0.13695 0.22409-0.29878 0.41083-0.68471 0.32368l-2.0417-0.85902c-0.28635-0.19919-0.41084-0.44819-0.23655-0.79677l0.97106-1.9297c-0.85901-0.64738-1.5686-1.3321-2.1288-2.0543l-2.079 0.84657c-0.3237 0.11205-0.59758 0.03736-0.78433-0.26144l-0.83411-1.9919c-0.0748-0.26144-0.0121-0.57268 0.28634-0.72207l2.1661-0.93372c-0.0997-0.93372-0.0997-1.8674-0.0121-2.8012zm2.3156 1.357c0 3.3116 2.7265 5.3658 5.3907 5.3658 2.8883 0 5.2787-2.4526 5.2787-5.316 0-3.0626-2.577-5.3533-5.2661-5.3533-2.6394 0-5.4031 1.9795-5.4031 5.3034z" fill="#fff" stroke-width="1.0204"/>
+  <rect x="202.51" y="36.595" width="15.363" height="20.279" fill="none" pointer-events="all" stroke-width="1.726"/>
+  <text x="210.19604" y="51.036289" fill="#ffffff" font-family="Helvetica" font-size="14.748px" font-weight="bold" opacity=".5" stroke-width="1.726" text-anchor="middle"><tspan fill="#ffffff" font-family="Exo" font-weight="bold" stroke-width="1.0204">?</tspan></text>
+ </g>
+ <g v-click="6">
+  <rect x="144.2" y="55.991" width="139.25" height="41.936" fill="#eee" fill-opacity=".33" pointer-events="all" stroke="#fff"/>
+  <text transform="scale(1.0053 .99474)" x="212.58957" y="65.661598" fill="#1a1a1a" font-family="Exo" font-size="7.2271px" text-anchor="middle"><tspan x="212.58957" y="65.661598">HTTP Response</tspan><tspan x="212.58957" y="74.87574">Status : <tspan fill="#aa0000" font-family="Exo" font-weight="600">304</tspan></tspan><tspan x="212.58957" y="84.089874"><tspan fill="#aa0000" font-family="Exo" font-weight="600" stroke-width=".98008">ETag</tspan>: 33a64df551425f</tspan><tspan x="212.58957" y="93.304016">Cache-Control: max-age=3600</tspan></text>
+  <text transform="scale(1.0053 .99474)" x="364.77087" y="82.484978" fill="#ffffff" font-family="Helvetica" font-size="7.2271px" stroke-width="1.6916" text-anchor="end"><tspan font-family="Exo" font-style="italic" stroke-width="1">Not modified</tspan></text>
+  <path d="m144.2 74.415h-51.084c-1.8867 0-3.4056-1.6536-3.4056-3.7077v-7.6193" fill="none" marker-end="url(#marker1102824438)" stop-color="#000000" stroke="#fff" stroke-dasharray="2.04073, 2.04073" style="-inkscape-stroke:none;font-variation-settings:normal"/>
+  <path d="m359.9 63.607v7.0998c0 2.0541-1.5189 3.7077-3.4056 3.7077h-71.266" fill="none" marker-end="url(#marker1102824438)" stop-color="#000000" stroke="#fff" stroke-dasharray="2.04073, 2.04073" style="-inkscape-stroke:none;font-variation-settings:normal"/>
+ </g>
+ <g v-click="7">
+  <path d="m89.711 64.847v5.8598c0 2.0541-1.5189 3.7077-3.4056 3.7077h-65.848c-1.8867 0-3.4056-1.6536-3.4056-3.7077v-6.3909" fill="none" marker-end="url(#marker1102823612)" stop-color="#000000" stroke="#fff"/>
+  <g transform="matrix(.60544 0 0 .59909 4.9547 2.073)" pointer-events="all" stroke="#d45500" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.9095">
+   <path d="m70 100 10.52 5.98 7.19 12.25v22.37l-17.71-10.18z" fill="#fff"/>
+   <path d="m80.69 106.27v7.88l7.02 4.02" fill="none"/>
+  </g>
+ </g>
+</svg>
+
+<v-click at="8">
+
+`If-None-Match` prioritaire à `If-Modified-Since` si les 2 sont présents.
+
+</v-click>
+
+<v-click at="9">
+
 Plus coûteux à produire (mais peut être stocké), mais **plus fiable** (e.g. update/rollback de la ressource).
+
+</v-click>
 
 </div>

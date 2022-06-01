@@ -9,4 +9,4 @@ style: |
 ## Des stats&nbsp;!
 
 > Parmi toutes les requêtes HTTP, **80% des réponses** sont considérées comme pouvant être cachées
-> <footer><a href="https://almanac.httparchive.org/en/2019/caching">Web Almanac par HTTP Archive (2019)<br />Part IV Chapter 16: Caching</a></footer>
+> <footer>traduit depuis <a href="https://almanac.httparchive.org/en/2019/caching">Web Almanac par HTTP Archive (2019)<br />Part IV Chapter 16: Caching</a></footer>
