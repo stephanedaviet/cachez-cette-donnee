@@ -2,7 +2,7 @@
 preload: false
 ---
 
-<div style="font-size: 65%">
+<div style="font-size: 62%">
 
 ## `ETag` & `If-None-Match`
 
