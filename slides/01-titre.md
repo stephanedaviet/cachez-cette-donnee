@@ -13,4 +13,16 @@ layout: intro
     width: 2.5em;
     border-radius: 100%;
     padding: 0.1em;
-    background: #ffffff"/>
+    background: #ffffff" />
+
+<a style="color: #eeeeee55;
+    font-size: 0.5em;
+    background: transparent;
+    display: inline-block;
+    position: absolute;
+    width: 28em;
+    left: calc(50% - 14em);
+    bottom: 2.3em"
+   href="https://stephanedaviet.github.io/cachez-cette-donnee">
+  https://stephanedaviet.github.io/cachez-cette-donnee
+</a>
