@@ -1,6 +1,6 @@
 ## Vite fait bien fait côté serveur avec Spring Web
 
-```java {|5|6|8|9-14|10|11|12|13|16-20|17-19|}
+```java {all|5|6|8|9-14|10|11|12|13|16-20|17-19|all}
 public <T> ResponseEntity<T> checkCacheOrAnswer(Class<? extends Object> objectType,
         String objectName,
         WebRequest webRequest,

@@ -1,7 +1,7 @@
 ---
 style: |
-  padding-left: 6em;
-  padding-right: 6em;
+  padding-left: 5em;
+  padding-right: 5em;
   padding-top: 6em;
   padding-bottom: 6em;
 ---
