@@ -15,7 +15,7 @@
 
 </v-click>
 
-<svg width="100%" height="auto" style="margin: 0 auto" inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)" sodipodi:docname="ETag.svg" version="1.1" viewBox="0 0 444.85 100" xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd">
+<svg width="100%" style="margin: 0 auto" inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)" sodipodi:docname="ETag.svg" version="1.1" viewBox="0 0 444.85 100" xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd">
  <sodipodi:namedview bordercolor="#999999" borderopacity="1" inkscape:current-layer="svg18246" inkscape:cx="251.19969" inkscape:cy="49.942268" inkscape:pagecheckerboard="0" inkscape:pageopacity="0" inkscape:pageshadow="0" inkscape:window-height="1143" inkscape:window-maximized="1" inkscape:window-width="1920" inkscape:window-x="0" inkscape:window-y="0" inkscape:zoom="3.023491" pagecolor="#000000" showgrid="false"/>
  <defs>
   <marker id="arrow" overflow="visible" orient="auto">
