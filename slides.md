@@ -1,4 +1,5 @@
 ---
+title: Cachez cette donnée
 theme: ./dark-vintage
 selectable: true
 remoteAssets: true
