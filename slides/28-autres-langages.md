@@ -6,7 +6,7 @@ style: "font-size: 107%"
 
 Plutôt simple à mettre en œuvre et globalement supporté côté serveur. **Côté client, c'est une autre histoire**&nbsp;:
 
-<sequential-entrance v-if="!$slidev.nav.isPrintMode" fromRight>
+<sequential-entrance fromRight>
 
 - Python <icon-park-outline-confounded-face class="confounded" />&nbsp;: Rien trouvé sur le [client natif](https://docs.python.org/3/library/http.client.html), [article de alwaysdata sur une implem' maison](https://blog.alwaysdata.com/fr/2018/07/25/le-cache-http/) ou sur [OpenStack&nbsp;– HTTP Caching and Proxy Behavior](https://specs.openstack.org/openstack/api-wg/guidelines/http/caching.html),
 - NodeJS <icon-park-outline-neutral-face class="neutral"/>&nbsp;: Non natif (cf. [GitHub NodeJS&nbsp;– issue #6790](https://github.com/nodejs/node/issues/6790), à suivre [GitHub Undici&nbsp;– issue #1146](https://github.com/nodejs/undici/issues/1146)), librairies [adobe/helix-fetch](https://github.com/adobe/helix-fetch), [cacheable-request](https://github.com/jaredwray/cacheable-request), [kornelski/http-cache-semantics](https://github.com/kornelski/http-cache-semantics) ou encore [natemoo-re/ultrafetch <icon-park-outline-sleep class="discrete" />](https://github.com/natemoo-re/ultrafetch),

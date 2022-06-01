@@ -4,7 +4,7 @@ style: "font-size: 150%"
 
 ## Un peu de littérature
 
-<sequential-entrance v-if="!$slidev.nav.isPrintMode" fromRight>
+<sequential-entrance fromRight>
 
 - Doc instructive et didactique sur le cache HTTP et sa mise en place sur [roadmap.sh](https://roadmap.sh/guides/http-caching),
 - État des lieux à jour des pratiques et techniques autour du cache (et du Web en général)&nbsp;: [Web Almanac par HTTP Archive (2021) – Part IV Chapter 23: Caching](https://almanac.httparchive.org/en/2021/caching),
