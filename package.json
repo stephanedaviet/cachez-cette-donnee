@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "slidev",
     "build": "slidev build --base cachez-cette-donnee",
-    "export": "slidev export --timeout 1500 --output cachez-cette-donnee.pdf"
+    "export": "slidev export --output cachez-cette-donnee.pdf"
   },
   "author": "Stéphane Daviet",
   "license": "ISC",
