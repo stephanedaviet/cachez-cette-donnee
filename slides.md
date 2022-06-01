@@ -3,8 +3,8 @@ title: Cachez cette donnée
 theme: ./dark-vintage
 selectable: true
 remoteAssets: true
-download: false
-downloadUrl: ./cachez-cette-donnee.pdf
+download: true
+exportFilename: cachez-cette-donnee.pdf
 lineNumbers: true
 colorSchema: dark
 routerMode: hash

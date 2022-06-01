@@ -2,7 +2,7 @@
 
 ## Le cache, un truc vieux comme l'informatique
 
-<sequential-entrance fromRight>
+<sequential-entrance v-if="!$slidev.nav.isPrintMode" fromRight>
 
 - Cache du plan d'exécution des requêtes en base de données,
 - Cache des requêtes et cache de second en Hibernate,

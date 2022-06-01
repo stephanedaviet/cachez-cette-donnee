@@ -4,7 +4,7 @@ style: "font-size: 135%"
 
 ## Pour combler les longues soirées d'hiver
 
-<sequential-entrance fromRight>
+<sequential-entrance v-if="!$slidev.nav.isPrintMode" fromRight>
 
 - Les **weak & strong validators** pour les `Etag` (cf. [MDN&nbsp;– Conditional Requests](https://developer.mozilla.org/en-US/docs/Web/HTTP/Conditional_requests)),
 - Les **bundlers JS** pour _packager_ les ressources statiques front avec _hashing_ pour permettre le _long term caching_ (_cache busting_) et _chunking_ pour les libs communes (par exemple avec Webpack [Long Term Caching](https://github.com/webpack/docs/wiki/long-term-caching/) & [Split Chunk Plugin](https://webpack.js.org/plugins/split-chunks-plugin/)),
