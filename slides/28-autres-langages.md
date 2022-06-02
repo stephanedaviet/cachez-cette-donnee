@@ -1,5 +1,5 @@
 ---
-style: "font-size: 107%"
+style: "font-size: 106%"
 ---
 
 ## Et pour les autres langages/écosystèmes&nbsp;?
