@@ -5,7 +5,7 @@ layout: cover
 # Pas de cachoteries entre nous,<br />vos questions&nbsp;?
 
 <style>
-  div div {
+  div.made-with div {
     display: inline-block;
     margin-right: 0.5em;
   }
