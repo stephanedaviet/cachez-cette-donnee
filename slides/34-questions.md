@@ -2,7 +2,7 @@
 layout: cover
 ---
 
-# Pas de cachoteries entre nous,<br />vos questions&nbsp;?
+# Pas de cachotteries entre nous,<br />vos questions&nbsp;?
 
 <style>
   div.made-with div {
